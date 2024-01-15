@@ -24,7 +24,7 @@ public class Restaurant {
     private Date open_date;
     @OneToMany(mappedBy = "restaurant")
     private Set<RatingRestaurant> listRatingRestaurent;
-    @OneToMany(mappedBy = "restaurent")
+    @OneToMany(mappedBy = "restaurant")
     private Set<MenuRestaurant> listMenuRestaurant;
     @OneToMany(mappedBy = "restaurant")
     private Set<Promo> listPromo;

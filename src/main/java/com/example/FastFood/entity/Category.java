@@ -10,10 +10,10 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(name = "category_name")
-    private String category_name;
-    @Column(name = "category_date")
-    private Date category_date;
+    @Column(name = "name_cate")
+    private String name_cate;
+    @Column(name = "create_date")
+    private Date create_date;
 
     @OneToMany(mappedBy = "category")
     private Set<Food> listFood;
@@ -45,18 +45,18 @@ public class Category {
     }
 
     public String getCategory_name() {
-        return category_name;
+        return name_cate;
     }
 
     public void setCategory_name(String category_name) {
-        this.category_name = category_name;
+        this.name_cate = name_cate;
     }
 
     public Date getCategory_date() {
-        return category_date;
+        return create_date;
     }
 
     public void setCategory_date(Date category_date) {
-        this.category_date = category_date;
+        this.create_date = create_date;
     }
 }
